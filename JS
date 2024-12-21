@@ -1,0 +1,13 @@
+// Get the profile picture element
+const profilePicture = document.querySelector('.profile-container img');
+
+// Add a hover effect to the profile picture
+profilePicture.addEventListener('mouseover', () => {
+  profilePicture.style.transform = 'scale(1.05)';
+  profilePicture.style.transition = 'transform 0.2s ease-in-out';
+});
+
+profilePicture.addEventListener('mouseout', () => {
+  profilePicture.style.transform = 'scale(1)';
+  profilePicture.style.transition = 'transform 0.2s ease-in-out';
+});
